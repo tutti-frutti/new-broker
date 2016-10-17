@@ -58,14 +58,17 @@
 
 .lb-advantages__list {
   width: 700px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .lb-advantages__list li {
     display: inline-block;
     list-style: none;
     margin: 0;
     width: 170px;
     padding-top: 160px;
-    vertical-align: top; }
+    margin: 0 15px 0 0;
+    vertical-align: top;
+    text-align: center; }
     .lb-advantages__list li a {
       position: relative; }
       .lb-advantages__list li a::before {
@@ -73,12 +76,110 @@
         content: '';
         width: 130px;
         height: 130px;
-        top: 0;
-        left: 0;
+        top: -150px;
+        left: 50%;
+        margin-left: -65px;
         border: 5px solid #d5d4c5;
-        border-radius: 50%; }
-        .lb-advantages__list li a::before:hover {
-          border: 5px solid #11c2d1; }
+        border-radius: 50%;
+        transition: .7s; }
+      .lb-advantages__list li a:hover::before {
+        border: 5px solid #11c2d1; }
+
+.lb-advantages__ic-1 {
+  position: relative; }
+  .lb-advantages__ic-1::after {
+    position: absolute;
+    content: '';
+    top: -140px;
+    left: 50%;
+    margin-left: -40px;
+    width: 92px;
+    height: 81px;
+    background: url("../img/adv-1.png") 0 0 no-repeat;
+    transition: .7s;
+    z-index: 1; }
+  .lb-advantages__ic-1:hover::after {
+    transform: scale(1.05); }
+
+.lb-advantages__ic-2 {
+  position: relative; }
+  .lb-advantages__ic-2::after {
+    position: absolute;
+    content: '';
+    top: -160px;
+    left: 50%;
+    margin-left: -40px;
+    width: 92px;
+    height: 81px;
+    background: url("../img/adv-2.png") 0 0 no-repeat;
+    transition: .7s;
+    z-index: 1; }
+  .lb-advantages__ic-2:hover::after {
+    transform: scale(1.05); }
+
+.lb-advantages__ic-3 {
+  position: relative; }
+  .lb-advantages__ic-3::after {
+    position: absolute;
+    content: '';
+    top: -140px;
+    left: 50%;
+    margin-left: -40px;
+    width: 92px;
+    height: 81px;
+    background: url("../img/adv-3.png") 0 0 no-repeat;
+    transition: .7s;
+    z-index: 1; }
+  .lb-advantages__ic-3:hover::after {
+    transform: scale(1.05); }
+
+.lb-advantages__ic-4 {
+  position: relative; }
+  .lb-advantages__ic-4::after {
+    position: absolute;
+    content: '';
+    top: -150px;
+    left: 50%;
+    margin-left: -36px;
+    width: 92px;
+    height: 85px;
+    background: url("../img/adv-4.png") 0 0 no-repeat;
+    transition: .7s;
+    z-index: 1; }
+  .lb-advantages__ic-4:hover::after {
+    transform: scale(1.05); }
+
+.lb-advantages__ic-5 {
+  position: relative; }
+  .lb-advantages__ic-5::after {
+    position: absolute;
+    content: '';
+    top: -140px;
+    left: 50%;
+    margin-left: -40px;
+    width: 92px;
+    height: 81px;
+    background: url("../img/adv-5.png") 0 0 no-repeat;
+    transition: .7s;
+    z-index: 1; }
+  .lb-advantages__ic-5:hover::after {
+    transform: scale(1.05); }
+
+.lb-advantages__ic-6 {
+  position: relative; }
+  .lb-advantages__ic-6::after {
+    position: absolute;
+    content: '';
+    top: -140px;
+    left: 50%;
+    margin-left: -40px;
+    width: 92px;
+    height: 81px;
+    background: url("../img/adv-6.png") 0 0 no-repeat;
+    transition: .7s;
+    z-index: 1; }
+  .lb-advantages__ic-6:hover::after {
+    transform: scale(1.05); }
 
 body {
   font-family: "PT Sans"; }
