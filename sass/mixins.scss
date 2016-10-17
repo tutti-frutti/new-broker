@@ -1,0 +1,21 @@
+@mixin pt-reg($font-size, $line-height) {
+font-family: 'PT Sans', sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: $font-size;
+line-height: $line-height;
+}
+
+@mixin pt-bold($font-size, $line-height) {
+font-family: 'PT Sans', sans-serif;
+font-weight: 700;
+font-style: bold;
+font-size: $font-size;
+line-height: $line-height;
+}
+
+@mixin li-inl($margin) {
+display: inline-block;
+list-style: none;
+margin: $margin;
+}

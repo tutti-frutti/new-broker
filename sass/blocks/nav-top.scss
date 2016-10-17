@@ -1,0 +1,29 @@
+.lb {
+    &-header {
+        height: 95px;
+        line-height: 95px;
+        background: #353e44;
+    }
+    &-nav-top {
+        border-bottom: 5px solid #d5d4c5;
+        &__list {
+            text-align: center;
+            li {
+                @include li-inl(0);
+                vertical-align: top;
+            }
+            a {
+                @include pt-bold(18px, 95px);
+                display: block;
+                padding: 0 15px;
+                text-decoration: underline;
+                color: #cccccc;
+                &:hover {
+                    text-decoration: none;
+                    background: #3f484e;
+                    box-shadow: 0 5px 0 0 #11c1d0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "amazing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tutti-frutti/amazing.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "csso": "^2.2.1",
+    "editorconfig-tools": "0.1.1",
+    "grunt": "1.0.1",
+    "grunt-bake": "^1.7.2",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-csso": "^2.0.1",
+    "grunt-postcss": "0.8.0",
+    "grunt-sass": "^1.2.0"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "grunt sass && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "engines": {
+    "node": "5.11"
+  },
+  "dependencies": {
+    "debug-log": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}

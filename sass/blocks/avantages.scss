@@ -1,0 +1,36 @@
+.lb {
+    &-advantages {
+        h3 {
+            @include pt-bold(30px, 30px);
+            margin-bottom: 60px;
+            text-align: center;
+            color: $text;
+        }
+        &__list {
+            width: 700px;
+            margin: 0 auto;
+            li {
+                @include li-inl(0);
+                width: 170px;
+                padding-top: 160px;
+                vertical-align: top;
+                a {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 130px;
+                    height: 130px;
+                    top: 0;
+                    left: 0;
+                    border: 5px solid #d5d4c5;
+                    border-radius: 50%;
+                    &:hover {
+                        border: 5px solid #11c2d1;
+                    }
+                }
+                    }
+            }
+        }
+    }
+}

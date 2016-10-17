@@ -1,0 +1,12 @@
+build/
+node_modules/
+psd/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
+css/*.css

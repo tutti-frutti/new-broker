@@ -1,0 +1,18 @@
+.lb {
+    &-presentation {
+        height: 525px;
+        margin-bottom: 55px;
+        background-image: url('../img/presentation-img.jpg');
+        background-size: cover;
+        h1 {
+            @include pt-bold(48px, 48px);
+            width: 360px;
+            float: right;
+            margin: 112px 240px 0 0;
+            padding-left: 30px;
+            text-transform: uppercase;
+            border-left: 7px solid #11c2d1;
+            color: $text;
+        }
+    }
+}
