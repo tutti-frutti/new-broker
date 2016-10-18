@@ -1,18 +1,28 @@
 .lb {
     &-presentation {
-        height: 525px;
-        margin-bottom: 55px;
+        height: 516px;
+        margin-bottom: 54px;
         background-image: url('../img/presentation-img.jpg');
         background-size: cover;
         h1 {
-            @include pt-bold(48px, 48px);
+            @include pt-bold(48px, 57px);
+            position: relative;
             width: 360px;
             float: right;
-            margin: 112px 240px 0 0;
+            margin: 105px 307px 0 0;
             padding-left: 30px;
             text-transform: uppercase;
-            border-left: 7px solid #11c2d1;
+//            border-left: 7px solid #11c2d1;
             color: $text;
+            &::before {
+                position: absolute;
+                content: '';
+                top: 11px;
+                left: -6px;
+                width: 8px;
+                height: 207px;
+                background: url('../img/vert-line.png') 0 0 no-repeat;
+            }
         }
     }
 }

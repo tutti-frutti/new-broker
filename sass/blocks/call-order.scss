@@ -1,0 +1,31 @@
+.lb {
+    &-call-order {
+        height: 245px;
+        background: #f1f1f1;
+        p {
+            @include pt-reg(16px, 16px);
+            display: block;
+            width: 765px;
+            margin: 0 auto;
+            padding: 73px 0 39px;
+            text-align: center;
+            color: $text;
+        }
+        &__btn {
+            @include pt-bold(21px, 41px);
+            display: block;
+            width: 217px;
+            height: 47px;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid #fff;
+            border-radius: 4px;
+            background-image: linear-gradient(to bottom, #feb751, #ec8c02);
+            box-shadow: 0 2px 3px 1px #c3c3c3;
+            color: #fff;
+            &:hover {
+                background-image: linear-gradient(to bottom, #ec8c02, #feb751);
+            }
+        }
+    }
+}

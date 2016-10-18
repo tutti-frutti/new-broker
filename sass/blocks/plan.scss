@@ -1,5 +1,58 @@
 .lb {
     &-plan {
-        
+        height: 542px;
+        background: #d7d6c8;
+        h3 {
+            @include pt-bold(30px, 30px);
+            padding-top: 66px;
+            margin-bottom: 70px;
+            text-align: center;
+            color: $text;
+        }
+        &__inner {
+            margin-left: 50px;
+        }
+        &__left, 
+        &__right {
+            display: inline-block;
+            vertical-align: top;
+        }
+        &__right {
+            padding-left: 255px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: -6px;
+                width: 251px;
+                height: 271px;
+                background: url('../img/plan-scheme.png') 0 0 no-repeat;
+            }
+        }
+        &__list {
+            &._ta-right {
+                text-align: right;
+            }
+            &._top-indent-1 {
+                margin: 3px 0 0 178px;
+                
+            }
+            &._top-indent-2 {
+                margin-top: 120px;
+            }
+            &._top-indent-3 {
+                margin-top: 108px;
+            }
+            li {
+                &:first-child {
+                    @include pt-bold(14px, 29px);
+                    text-transform: uppercase;
+                    color: $text;
+                }
+                @include pt-reg(14px, 24px);
+                color: $text;
+            }
+        }
     }
 }

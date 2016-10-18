@@ -8,25 +8,38 @@
         }
         &__list {
             width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 35px;
             text-align: center;
             li {
                 @include li-inl(0);
                 width: 170px;
                 padding-top: 160px;
-                margin: 0 15px 0 0;
+                margin: 0 15px 46px 20px;
                 vertical-align: top;
                 text-align: center;
+                &:nth-child(2) {
+                    margin-left: 50px;
+                }
+                &:nth-child(3) {
+                    margin-left: 50px;
+                }
+                &:nth-child(5) {
+                    margin-left: 50px;
+                }
+                &:nth-child(6) {
+                    margin-left: 50px;
+                }
                 a {
+                    @include pt-bold(18px, 21px);
                     position: relative;
+                    color: $text;
                     &::before {
                         position: absolute;
                         content: '';
-                        width: 130px;
-                        height: 130px;
-                        top: -150px;
-                        left: 50%;
-                        margin-left: -65px;
+                        width: 135px;
+                        height: 135px;
+                        top: -156px;
+                        left: 12px;
                         border: 5px solid #d5d4c5;
                         border-radius: 50%;
                         transition: .7s;
@@ -40,13 +53,11 @@
             }
         }
         &__ic-1 {
-            position: relative;
             &::after {
                 position: absolute;
                 content: '';
-                top: -140px;
-                left: 50%;
-                margin-left: -40px;
+                top: -145px;
+                left: 36px;
                 width: 92px;
                 height: 81px;
                 background: url('../img/adv-1.png') 0 0 no-repeat;
@@ -64,9 +75,8 @@
             &::after {
                 position: absolute;
                 content: '';
-                top: -160px;
-                left: 50%;
-                margin-left: -40px;
+                top: -168px;
+                left: 39px;
                 width: 92px;
                 height: 81px;
                 background: url('../img/adv-2.png') 0 0 no-repeat;
@@ -84,9 +94,8 @@
             &::after {
                 position: absolute;
                 content: '';
-                top: -140px;
-                left: 50%;
-                margin-left: -40px;
+                top: -145px;
+                left: 39px;
                 width: 92px;
                 height: 81px;
                 background: url('../img/adv-3.png') 0 0 no-repeat;
@@ -104,9 +113,8 @@
             &::after {
                 position: absolute;
                 content: '';
-                top: -150px;
-                left: 50%;
-                margin-left: -36px;
+                top: -147px;
+                left: 43px;
                 width: 92px;
                 height: 85px;
                 background: url('../img/adv-4.png') 0 0 no-repeat;
@@ -124,9 +132,8 @@
             &::after {
                 position: absolute;
                 content: '';
-                top: -140px;
-                left: 50%;
-                margin-left: -40px;
+                top: -143px;
+                left: 39px;
                 width: 92px;
                 height: 81px;
                 background: url('../img/adv-5.png') 0 0 no-repeat;
@@ -144,9 +151,8 @@
             &::after {
                 position: absolute;
                 content: '';
-                top: -140px;
-                left: 50%;
-                margin-left: -40px;
+                top: -145px;
+                left: 39px;
                 width: 92px;
                 height: 81px;
                 background: url('../img/adv-6.png') 0 0 no-repeat;
