@@ -3,11 +3,11 @@
         height: 245px;
         background: #f1f1f1;
         p {
-            @include pt-reg(16px, 16px);
+            @include pt-reg(16px, 18px);
             display: block;
             width: 765px;
             margin: 0 auto;
-            padding: 73px 0 39px;
+            padding: 73px 0 35px;
             text-align: center;
             color: $text;
         }

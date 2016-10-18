@@ -8,160 +8,74 @@
         }
         &__list {
             width: 700px;
-            margin: 0 auto 35px;
-            text-align: center;
+            margin: 0 auto 69px;
             li {
                 @include li-inl(0);
                 width: 170px;
-                padding-top: 160px;
-                margin: 0 15px 46px 20px;
+                height: 190px;
                 vertical-align: top;
                 text-align: center;
+                &:nth-child(1) {
+                    margin-left: 28px;
+                    margin-top: 5px;
+                    margin-bottom: 51px;
+                }
                 &:nth-child(2) {
-                    margin-left: 50px;
+                    margin-left: 66px;
+                    margin-top: 5px;
                 }
                 &:nth-child(3) {
-                    margin-left: 50px;
+                    margin-left: 66px;
+                    margin-top: 5px;
                 }
-                &:nth-child(5) {
-                    margin-left: 50px;
+                &:nth-child(4) {
+                    margin-left: 28px;
+                    margin-top: 5px;
                 }
+                &:nth-child(5),
                 &:nth-child(6) {
-                    margin-left: 50px;
-                }
-                a {
-                    @include pt-bold(18px, 21px);
-                    position: relative;
-                    color: $text;
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        width: 135px;
-                        height: 135px;
-                        top: -156px;
-                        left: 12px;
-                        border: 5px solid #d5d4c5;
-                        border-radius: 50%;
-                        transition: .7s;
-                    }
-                    &:hover {
-                        &::before {
-                            border: 5px solid #11c2d1;
-                        }
-                    }
+                    margin-left: 66px;
+                    margin-top: 5px;
                 }
             }
         }
-        &__ic-1 {
-            &::after {
-                position: absolute;
-                content: '';
-                top: -145px;
-                left: 36px;
-                width: 92px;
-                height: 81px;
-                background: url('../img/adv-1.png') 0 0 no-repeat;
-                transition: .7s;
-                z-index: 1;
-            }
-            &:hover {
-                &::after {
-                    transform: scale(1.05);
-                }
-            }
+        &__descr {
+            @include pt-bold(18px, 21px);
+            display: block;
+            color: $text;
         }
-         &__ic-2 {
+        &__block {
             position: relative;
-            &::after {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 5px;
+            transition: .7s;
+            cursor: pointer;
+            img {
+                display: block;
+                padding-top: 32px;
+                margin: 0 auto;
+                transition: .7s;
+            }
+            &::before {
                 position: absolute;
                 content: '';
-                top: -168px;
-                left: 39px;
-                width: 92px;
-                height: 81px;
-                background: url('../img/adv-2.png') 0 0 no-repeat;
+                width: 135px;
+                height: 135px;
+                top: 0;
+                left: 0;
+                border: 5px solid #d5d4c5;
+                border-radius: 50%;
                 transition: .7s;
-                z-index: 1;
             }
             &:hover {
-                &::after {
-                    transform: scale(1.05);
+                &::before {
+                    border: 5px solid #11c2d1;
+                    cursor: pointer;
                 }
-            }
-        }
-        &__ic-3 {
-            position: relative;
-            &::after {
-                position: absolute;
-                content: '';
-                top: -145px;
-                left: 39px;
-                width: 92px;
-                height: 81px;
-                background: url('../img/adv-3.png') 0 0 no-repeat;
-                transition: .7s;
-                z-index: 1;
-            }
-            &:hover {
-                &::after {
-                    transform: scale(1.05);
-                }
-            }
-        }
-        &__ic-4 {
-            position: relative;
-            &::after {
-                position: absolute;
-                content: '';
-                top: -147px;
-                left: 43px;
-                width: 92px;
-                height: 85px;
-                background: url('../img/adv-4.png') 0 0 no-repeat;
-                transition: .7s;
-                z-index: 1;
-            }
-            &:hover {
-                &::after {
-                    transform: scale(1.05);
-                }
-            }
-        }
-        &__ic-5 {
-            position: relative;
-            &::after {
-                position: absolute;
-                content: '';
-                top: -143px;
-                left: 39px;
-                width: 92px;
-                height: 81px;
-                background: url('../img/adv-5.png') 0 0 no-repeat;
-                transition: .7s;
-                z-index: 1;
-            }
-            &:hover {
-                &::after {
-                    transform: scale(1.05);
-                }
-            }
-        }
-        &__ic-6 {
-            position: relative;
-            &::after {
-                position: absolute;
-                content: '';
-                top: -145px;
-                left: 39px;
-                width: 92px;
-                height: 81px;
-                background: url('../img/adv-6.png') 0 0 no-repeat;
-                transition: .7s;
-                z-index: 1;
-            }
-            &:hover {
-                &::after {
-                    transform: scale(1.05);
+                img {
+                    transform: scale(1.1);
+                    cursor: pointer;
                 }
             }
         }

@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         sass: {
             style: {
                 files: {
-                    "css/style.css": "sass/style.scss"
+                    "css/new-broker.css": "sass/style.scss"
                 }
             }
         },
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     // основной файл css
-                    "css/style.min.css": ["css/style.css"],
+                    "css/new-broker.min.css": ["css/new-broker.css"],
                     // файлы css из плагинов для минификации и объеденения
                     "css/library.min.css": [
                     "js/slick/slick/slick.css",
