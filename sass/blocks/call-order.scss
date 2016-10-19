@@ -9,19 +9,20 @@
             margin: 0 auto;
             padding: 73px 0 35px;
             text-align: center;
+//            letter-spacing: 1px;
             color: $text;
         }
         &__btn {
-            @include pt-bold(21px, 41px);
+            @include pt-bold(20px, 44px);
             display: block;
-            width: 217px;
-            height: 47px;
+            width: 215px;
+            height: 46px;
             margin: 0 auto;
             text-align: center;
-            border: 2px solid #fff;
+            border: 1px solid #fff;
             border-radius: 4px;
             background-image: linear-gradient(to bottom, #feb751, #ec8c02);
-            box-shadow: 0 2px 3px 1px #c3c3c3;
+            box-shadow: 0 2px 4px 0 #c3c3c3;
             color: #fff;
             &:hover {
                 background-image: linear-gradient(to bottom, #ec8c02, #feb751);

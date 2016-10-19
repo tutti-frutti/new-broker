@@ -4,15 +4,18 @@
         margin-bottom: 54px;
         background-image: url('../img/presentation-img.jpg');
         background-size: cover;
+        &__title {
+            width: 360px;
+            padding: 65px 0 0 0;
+            margin: 0 315px 0 auto;
+        }
         h1 {
             @include pt-bold(48px, 57px);
             position: relative;
             width: 360px;
-            float: right;
-            margin: 105px 307px 0 0;
             padding-left: 30px;
+//            padding-top: 100px;
             text-transform: uppercase;
-//            border-left: 7px solid #11c2d1;
             color: $text;
             &::before {
                 position: absolute;

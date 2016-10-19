@@ -8,13 +8,15 @@
         }
         &__list {
             width: 700px;
-            margin: 0 auto 69px;
+            margin: 0 auto 67px;
+            padding: 0;
             li {
                 @include li-inl(0);
                 width: 170px;
                 height: 190px;
                 vertical-align: top;
                 text-align: center;
+                list-style: none;
                 &:nth-child(1) {
                     margin-left: 28px;
                     margin-top: 5px;
@@ -22,19 +24,22 @@
                 }
                 &:nth-child(2) {
                     margin-left: 66px;
-                    margin-top: 5px;
+                    margin-top: 4px;
                 }
                 &:nth-child(3) {
-                    margin-left: 66px;
-                    margin-top: 5px;
+                    margin-left: 65px;
+                    margin-top: 4px;
                 }
                 &:nth-child(4) {
                     margin-left: 28px;
+                    margin-top: 8px;
+                }
+                &:nth-child(5) {
+                    margin-left: 66px;
                     margin-top: 5px;
                 }
-                &:nth-child(5),
                 &:nth-child(6) {
-                    margin-left: 66px;
+                    margin-left: 64px;
                     margin-top: 5px;
                 }
             }
@@ -44,39 +49,76 @@
             display: block;
             color: $text;
         }
-        &__block {
+        &__block-1 {
             position: relative;
             width: 150px;
             height: 150px;
             margin: 0 auto 5px;
-            transition: .7s;
+            transition: .3s;
             cursor: pointer;
-            img {
-                display: block;
-                padding-top: 32px;
-                margin: 0 auto;
-                transition: .7s;
-            }
-            &::before {
-                position: absolute;
-                content: '';
-                width: 135px;
-                height: 135px;
-                top: 0;
-                left: 0;
-                border: 5px solid #d5d4c5;
-                border-radius: 50%;
-                transition: .7s;
-            }
+            background: url('../img/1_1.png') 0 0 no-repeat;
             &:hover {
-                &::before {
-                    border: 5px solid #11c2d1;
-                    cursor: pointer;
-                }
-                img {
-                    transform: scale(1.1);
-                    cursor: pointer;
-                }
+                background: url('../img/1_2.png') 0 0 no-repeat;
+            }
+        }
+        &__block-2 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 7px;
+            transition: .3s;
+            cursor: pointer;
+            background: url('../img/2_1.png') 0 0 no-repeat;
+            &:hover {
+                background: url('../img/2_2.png') 0 0 no-repeat;
+            }
+        }
+        &__block-3 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 6px;
+            transition: .3s;
+            cursor: pointer;
+            background: url('../img/3_1.png') 0 0 no-repeat;
+            &:hover {
+                background: url('../img/3_2.png') 0 0 no-repeat;
+            }
+        }
+        &__block-4 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 6px;
+            transition: .3s;
+            cursor: pointer;
+            background: url('../img/4_1.png') 0 0 no-repeat;
+            &:hover {
+                background: url('../img/4_2.png') 0 0 no-repeat;
+            }
+        }
+        &__block-5 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 8px;
+            transition: .3s;
+            cursor: pointer;
+            background: url('../img/5_1.png') 0 0 no-repeat;
+            &:hover {
+                background: url('../img/5_2.png') 0 0 no-repeat;
+            }
+        }
+        &__block-6 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 8px;
+            transition: .3s;
+            cursor: pointer;
+            background: url('../img/6_1.png') 0 0 no-repeat;
+            &:hover {
+                background: url('../img/6_2.png') 0 0 no-repeat;
             }
         }
     }

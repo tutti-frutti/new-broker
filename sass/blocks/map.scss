@@ -3,19 +3,22 @@
         height: 790px;
         h3 {
             @include pt-bold(30px, 30px);
-            padding: 69px 0 22px;
+            margin: 0;
+            padding: 69px 0 21px;
             text-align: center;
             color: $text;
         }
         h5 {
             @include pt-bold(18px, 18px);
+            margin: 0;
             padding: 42px 0 14px;
             text-align: center;
             color: $text;
         }
         p {
             @include pt-reg(14px, 14px);
-            margin-bottom: 70px;
+            margin: 0 0 70px 0;
+            padding: 0;
             text-align: center;
             color: $text;
         }

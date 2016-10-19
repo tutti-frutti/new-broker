@@ -4,8 +4,8 @@
         background: #d7d6c8;
         h3 {
             @include pt-bold(30px, 30px);
-            padding-top: 66px;
-            margin-bottom: 70px;
+            padding: 66px 0 0 0;
+            margin: 0 0 70px 0;
             text-align: center;
             color: $text;
         }
@@ -31,8 +31,11 @@
             }
         }
         &__list {
+            padding: 0;
             &._ta-right {
                 text-align: right;
+                margin: 0;
+                padding: 0;
             }
             &._top-indent-1 {
                 margin: 3px 0 0 178px;
@@ -45,6 +48,7 @@
                 margin-top: 108px;
             }
             li {
+                list-style: none;
                 &:first-child {
                     @include pt-bold(14px, 29px);
                     text-transform: uppercase;
